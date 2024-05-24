@@ -93,6 +93,7 @@ const defaultExportColumns = (data) => {
       number: issueObject.number,
       title: issueObject.title,
       state: issueObject.state,
+      state_reason: issueObject.state_reason,
       labels: "", // will be filled in below, if it exists
       milestone: "", // will be filled in below, if it exists
       user: "", // will be filled in below, if it exists
@@ -101,7 +102,7 @@ const defaultExportColumns = (data) => {
       created_at: issueObject.created_at,
       updated_at: issueObject.updated_at,
       closed_at: issueObject.closed_at !== null ? issueObject.closed_at : "",
-      body: issueObject.body,
+      body: issueObject.body,      
     };
     if (issueObject.user) {
       ret.user = issueObject.user.login;
