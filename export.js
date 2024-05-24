@@ -102,7 +102,7 @@ const defaultExportColumns = (data) => {
       created_at: issueObject.created_at,
       updated_at: issueObject.updated_at,
       closed_at: issueObject.closed_at !== null ? issueObject.closed_at : "",
-      body: issueObject.body,      
+      body: issueObject.body,
     };
     if (issueObject.user) {
       ret.user = issueObject.user.login;
